@@ -10,12 +10,12 @@ export default function App() {
   const buttonText = "Click Me!";
   return (
     <div>
-      <label className="label" for="name">
+      <label className="label" htmlFor="name">
         Enter Name:
       </label>
       <input id="name" type="text" />
       <button style={{ backgroundColor: "red", color: "white" }}>
-        {getButtonText()}
+        {buttonText}
       </button>
     </div>
   );
@@ -23,3 +23,5 @@ export default function App() {
 
 //Take react component and show it on screen
 ReactDOM.render(<App />, document.getElementById("root"));
+
+// We cannot reference JSON Object as text
